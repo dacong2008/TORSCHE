@@ -109,8 +109,8 @@ else
 end 
 
 if nargin > 6
-    if isnumeric(varargin{1})
-        cap = varargin{1};
+    if isnumeric(varargin{2})
+        cap = varargin{2};
         cap = round(cap(1)); 
     end
 else
@@ -118,8 +118,8 @@ else
 end
 
 if nargin > 7
-    if isnumeric(varargin{2})
-        userParamPos = varargin{2};
+    if isnumeric(varargin{3})
+        userParamPos = varargin{3};
         userParamPos = round(userParamPos(1));
         if userParamPos == cap
             disp ('TORSCHE:graph:sameParam',...
